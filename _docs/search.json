@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Continuous Colourmap Fuction",
     "section": "",
-    "text": "pip install ccm"
+    "text": "pip install continuous_cmap"
   },
   {
     "objectID": "index.html#how-to-use",
@@ -18,6 +18,6 @@
     "href": "cmap.html",
     "title": "Continuous Colormap",
     "section": "",
-    "text": "get_continuous_cmap\n\n get_continuous_cmap (hex_list, float_list=None)\n\ncreates and returns a color map that can be used in heat map figures.\n\n\n\n\nType\nDefault\nDetails\n\n\n\n\nhex_list\n\n\n\n\n\nfloat_list\nNoneType\nNone\n\n\n\nReturns\ncolour map\n\n\n\n\n\n\n# refactor to use get_continuous_cmap\ndef get_discrete_cmap(hex_list, float_list=None):\n    ''' creates and returns a color map that can be used in heat map figures.\n        If float_list is not provided, colour map graduates linearly between each color in hex_list.\n        If float_list is provided, each color in hex_list is mapped to the respective location in float_list. \n        \n        Parameters\n        ----------\n        hex_list: list of hex code strings\n        float_list: list of floats between 0 and 1, same length as hex_list. Must start with 0 and end with 1.\n        \n        Returns\n        ----------\n        colour map'''\n    rgb_list = [[int(x.strip('#')[i:i + len(x.strip('#')) // 3], 16)/256 for i in range(0, len(x.strip('#')), len(x.strip('#')) // 3)] for x in hex_list]\n    if float_list:\n        pass\n    else:\n        float_list = list(np.linspace(0,1,len(rgb_list)))\n        \n    cdict = dict()\n    for num, col in enumerate(['red', 'green', 'blue']):\n        col_list = [[float_list[i], rgb_list[i][num], rgb_list[i][num]] for i in range(len(float_list))]\n        cdict[col] = col_list\n    cmp = colors.LinearSegmentedColormap('my_cmp', segmentdata=cdict, N=256)\n    return cmp\n\n\ncmap_1000 = get_continuous_cmap(['#2AA364', '#F5EB4D', '#9E4229', '#381D02', '#381D02', '#381D02'], float_list=[0, 0.15, .6,.75,.8,1])\ncmap_1000\n\nmy_cmp  underbad over"
+    "text": "get_continuous_cmap\n\n get_continuous_cmap (hex_list, float_list=None)\n\ncreates and returns a color map that can be used in heat map figures.\n\n\n\n\nType\nDefault\nDetails\n\n\n\n\nhex_list\n\n\n\n\n\nfloat_list\nNoneType\nNone\n\n\n\nReturns\ncolour map\n\n\n\n\n\n\ncmap_1000 = get_continuous_cmap(['#2AA364', '#F5EB4D', '#9E4229', '#381D02', '#381D02', '#381D02'], float_list=[0, 0.15, .6,.75,.8,1])\ncmap_1000\n\nmy_cmp  underbad over"
   }
 ]

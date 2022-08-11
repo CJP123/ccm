@@ -5,7 +5,7 @@ Continuous Colourmap Fuction
 
 ## Install
 
-`pip install ccm`
+`pip install continuous_cmap`
 
 ## How to use
 

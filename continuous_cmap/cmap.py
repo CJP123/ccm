@@ -3,10 +3,10 @@
 # %% auto 0
 __all__ = ['get_continuous_cmap']
 
-# %% ../00_cmap.ipynb 3
+# %% ../00_cmap.ipynb 2
 from matplotlib import colors
 
-# %% ../00_cmap.ipynb 4
+# %% ../00_cmap.ipynb 3
 def get_continuous_cmap(hex_list, float_list=None):
     ''' creates and returns a color map that can be used in heat map figures.
         If float_list is not provided, colour map graduates linearly between each color in hex_list.

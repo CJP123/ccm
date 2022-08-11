@@ -32,5 +32,5 @@ d = { 'settings': { 'allowed_cell_metadata_keys': '',
                 'title': 'continuous_cmap',
                 'tst_flags': 'notest',
                 'user': 'CJP123',
-                'version': '0.0.4'},
+                'version': '0.0.5'},
   'syms': {'continuous_cmap.cmap': {'continuous_cmap.cmap.get_continuous_cmap': 'https://CJP123.github.io/continuous_cmap/cmap.html#get_continuous_cmap'}}}
