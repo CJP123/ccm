@@ -15,8 +15,8 @@ format:
     toc-depth: 4
 
 website:
-  title: "ccm"
-  site-url: "https://CJP123.github.io/ccm/"
+  title: "continuous_cmap"
+  site-url: "https://CJP123.github.io/continuous_cmap/"
   description: "Create a continuous colormap in matplotlib"
   execute: 
     enabled: false
@@ -24,14 +24,14 @@ website:
   open-graph: true
   reader-mode: true
   repo-branch: main
-  repo-url: "https://github.com/CJP123/ccm/"
+  repo-url: "https://github.com/CJP123/continuous_cmap/"
   repo-actions: [issue]
   navbar:
     background: primary
     search: true
     right:
       - icon: github
-        href: "https://github.com/CJP123/ccm/"
+        href: "https://github.com/CJP123/continuous_cmap/"
   sidebar:
     style: "floating"
 

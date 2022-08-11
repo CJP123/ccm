@@ -8,7 +8,7 @@
 
 <meta name="description" content="Takes a list of colours and a list of values and returns a continuous matplotlib colourmap">
 
-<title>ccm - Continuous Colourmap Fuction</title>
+<title>continuous_cmap - Continuous Colourmap Fuction</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -123,10 +123,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 
 <link rel="stylesheet" href="styles.css">
-<meta property="og:title" content="ccm - Continuous Colourmap Fuction">
+<meta property="og:title" content="continuous_cmap - Continuous Colourmap Fuction">
 <meta property="og:description" content="Takes a list of colours and a list of values and returns a continuous matplotlib colourmap">
-<meta property="og:site-name" content="ccm">
-<meta name="twitter:title" content="ccm - Continuous Colourmap Fuction">
+<meta property="og:site-name" content="continuous_cmap">
+<meta name="twitter:title" content="continuous_cmap - Continuous Colourmap Fuction">
 <meta name="twitter:description" content="Takes a list of colours and a list of values and returns a continuous matplotlib colourmap">
 <meta name="twitter:card" content="summary">
 </head>
@@ -138,7 +138,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">ccm</span>
+    <span class="navbar-title">continuous_cmap</span>
   </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
@@ -146,7 +146,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/CJP123/ccm/"><i class="bi bi-github" role="img">
+    <a class="nav-link" href="https://github.com/CJP123/continuous_cmap/"><i class="bi bi-github" role="img">
 </i> 
  </a>
   </li>  
@@ -199,7 +199,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <li><a href="#install" id="toc-install" class="nav-link active" data-scroll-target="#install">Install</a></li>
   <li><a href="#how-to-use" id="toc-how-to-use" class="nav-link" data-scroll-target="#how-to-use">How to use</a></li>
   </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/CJP123/ccm/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/CJP123/continuous_cmap/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -233,21 +233,21 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <section id="how-to-use" class="level2">
 <h2 class="anchored" data-anchor-id="how-to-use">How to use</h2>
 <p>Simple paired colors and splits to generate a continuous colourmap.</p>
-<div class="cell" data-execution_count="7">
+<div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>hex_list <span class="op">=</span> [<span class="st">'#2AA364'</span>, <span class="st">'#F5EB4D'</span>, <span class="st">'#9E4229'</span>, <span class="st">'#381D02'</span>, <span class="st">'#381D02'</span>, <span class="st">'#381D02'</span>]</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>float_list<span class="op">=</span>[<span class="dv">0</span>, <span class="fl">0.15</span>, <span class="fl">.6</span>,<span class="fl">.75</span>,<span class="fl">.8</span>,<span class="dv">1</span>]</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>cmap_1000 <span class="op">=</span> get_continuous_cmap(hex_list <span class="op">=</span> hex_list, float_list <span class="op">=</span> float_list)</span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>cmap_1000</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="7">
+<div class="cell-output cell-output-display">
 <div style="vertical-align: middle;"><strong>my_cmp</strong> </div><div class="cmap"><img alt="my_cmp colormap" title="my_cmp" style="border: 1px solid #555;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAABACAYAAABsv8+/AAAAFXRFWHRUaXRsZQBteV9jbXAgY29sb3JtYXAlV7erAAAAG3RFWHREZXNjcmlwdGlvbgBteV9jbXAgY29sb3JtYXBswK9PAAAAMHRFWHRBdXRob3IATWF0cGxvdGxpYiB2My41LjIsIGh0dHBzOi8vbWF0cGxvdGxpYi5vcmfCWnicAAAAMnRFWHRTb2Z0d2FyZQBNYXRwbG90bGliIHYzLjUuMiwgaHR0cHM6Ly9tYXRwbG90bGliLm9yZ+z857sAAAHGSURBVHic7dZJUsJAAEDRDlV4F8/lzbynxIUxFCmDOOHiv7cJ3Z10BjZ/enx+mscY4+EwxhhjHA/z23Fajsv8w+Fy/H7e3vxx2l53237rvtN2/vp+5+cZm+ffzN+637R33dtxWR7zelx+nDbzp/lifF5f5jfnf75+ud/2PmMdf7zP2Hmu29c/nr/X+//effbeY2f917/zzvvd7Ttff/+/v8/O/j/8zi/L+mm+HH86P754/p3nv339uH7++j+QdPjvBwAA7k8AAECQAACAIAEAAEECAACCBAAABAkAAAgSAAAQJAAAIEgAAECQAACAIAEAAEECAACCBAAABAkAAAgSAAAQJAAAIEgAAECQAACAIAEAAEECAACCBAAABAkAAAgSAAAQJAAAIEgAAECQAACAIAEAAEECAACCBAAABAkAAAgSAAAQJAAAIEgAAECQAACAIAEAAEECAACCBAAABAkAAAgSAAAQJAAAIEgAAECQAACAIAEAAEECAACCBAAABAkAAAgSAAAQJAAAIEgAAECQAACAIAEAAEECAACCBAAABAkAAAgSAAAQJAAAIEgAAECQAACAIAEAAEECAACCBAAABAkAAAh6BYtCeOK3iKzpAAAAAElFTkSuQmCC"></div><div style="vertical-align: middle; max-width: 514px; display: flex; justify-content: space-between;"><div style="float: left;"><div title="#2aa264ff" style="display: inline-block; width: 1em; height: 1em; margin: 0; vertical-align: middle; border: 1px solid #555; background-color: #2aa264ff;"></div> under</div><div style="margin: 0 auto; display: inline-block;">bad <div title="#00000000" style="display: inline-block; width: 1em; height: 1em; margin: 0; vertical-align: middle; border: 1px solid #555; background-color: #00000000;"></div></div><div style="float: right;">over <div title="#381d02ff" style="display: inline-block; width: 1em; height: 1em; margin: 0; vertical-align: middle; border: 1px solid #555; background-color: #381d02ff;"></div></div>
 </div>
 </div>
-<div class="cell" data-execution_count="8">
+<div class="cell">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>hex_list <span class="op">=</span> [<span class="st">'#2AA364'</span>, <span class="st">'#F5EB4D'</span>, <span class="st">'#9E4229'</span>, <span class="st">'#381D02'</span>, <span class="st">'#381D02'</span>]</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>float_list<span class="op">=</span>[<span class="dv">0</span>, <span class="fl">0.65</span>, <span class="fl">.75</span>,<span class="fl">.8</span>,<span class="dv">1</span>]</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>cmap_1000 <span class="op">=</span> get_continuous_cmap(hex_list <span class="op">=</span> hex_list, float_list <span class="op">=</span> float_list)</span>
 <span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>cmap_1000</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="8">
+<div class="cell-output cell-output-display">
 <div style="vertical-align: middle;"><strong>my_cmp</strong> </div><div class="cmap"><img alt="my_cmp colormap" title="my_cmp" style="border: 1px solid #555;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAABACAYAAABsv8+/AAAAFXRFWHRUaXRsZQBteV9jbXAgY29sb3JtYXAlV7erAAAAG3RFWHREZXNjcmlwdGlvbgBteV9jbXAgY29sb3JtYXBswK9PAAAAMHRFWHRBdXRob3IATWF0cGxvdGxpYiB2My41LjIsIGh0dHBzOi8vbWF0cGxvdGxpYi5vcmfCWnicAAAAMnRFWHRTb2Z0d2FyZQBNYXRwbG90bGliIHYzLjUuMiwgaHR0cHM6Ly9tYXRwbG90bGliLm9yZ+z857sAAAHWSURBVHic7dZBboMwFEXRH3bTdXVnXWWpkriDokohOIZMUvWdM0Fggy1CpHt6+3hvVVVT/TidluPdeas98+7H28556/G2Pb77Obfr7t/3ar8H15s69x1db+r+DuvnPH5P/efc3jfa99S572Xr7X7O9vc33nd7PP7keru/18Pf/fZ7Gu+7bc8b7vu59brf68H31B2/W+/2vt3/5856y/brPF+rqury1Zbztpwv1+e2Oe/3+qvmra7P50tVVX1eOsfrYHx4PBd/1zSeAgD8NwIAAAIJAAAIJAAAIJAAAIBAAgAAAgkAAAgkAAAgkAAAgEACAAACCQAACCQAACCQAACAQAIAAAIJAAAIJAAAIJAAAIBAAgAAAgkAAAgkAAAgkAAAgEACAAACCQAACCQAACCQAACAQAIAAAIJAAAIJAAAIJAAAIBAAgAAAgkAAAgkAAAgkAAAgEACAAACCQAACCQAACCQAACAQAIAAAIJAAAIJAAAIJAAAIBAAgAAAgkAAAgkAAAgkAAAgEACAAACCQAACCQAACCQAACAQAIAAAIJAAAIJAAAIJAAAIBAAgAAAgkAAAgkAAAgkAAAgEACAAACCQAACCQAACCQAACAQAIAAAIJAAAI9A1H74vTP+QgzQAAAABJRU5ErkJggg=="></div><div style="vertical-align: middle; max-width: 514px; display: flex; justify-content: space-between;"><div style="float: left;"><div title="#2aa264ff" style="display: inline-block; width: 1em; height: 1em; margin: 0; vertical-align: middle; border: 1px solid #555; background-color: #2aa264ff;"></div> under</div><div style="margin: 0 auto; display: inline-block;">bad <div title="#00000000" style="display: inline-block; width: 1em; height: 1em; margin: 0; vertical-align: middle; border: 1px solid #555; background-color: #00000000;"></div></div><div style="float: right;">over <div title="#381d02ff" style="display: inline-block; width: 1em; height: 1em; margin: 0; vertical-align: middle; border: 1px solid #555; background-color: #381d02ff;"></div></div>
 </div>
 </div>
