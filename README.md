@@ -20,6 +20,8 @@ cmap_1000
 
 ![](index_files/figure-gfm/cell-2-output-1.png)
 
+<img src="cmap1.png" alt="cmap1" width="400"/>
+
 ``` python
 hex_list = ['#2AA364', '#F5EB4D', '#9E4229', '#381D02', '#381D02']
 float_list=[0, 0.65, .75,.8,1]
@@ -28,3 +30,5 @@ cmap_1000
 ```
 
 ![](index_files/figure-gfm/cell-3-output-1.png)
+
+<img src="cmap2.png" alt="cmap2" width="400"/>

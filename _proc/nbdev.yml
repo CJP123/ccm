@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "continuous_cmap"
+  site-url: "https://CJP123.github.io/continuous_cmap/"
+  description: "Create a continuous colormap in matplotlib"
+  repo-branch: main
+  repo-url: "https://github.com/CJP123/continuous_cmap/"
